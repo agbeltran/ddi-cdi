@@ -7,19 +7,19 @@
     "name": "Karonga HDSS INDEPTH Core Dataset 2003-2017 (Release 2019)",
     "author": [
         {
-        	"@type": "person",
+        	"@type": "Person",
             "name": "Albert Dube",
             "memberOf": "Malawi Epidemiology Intervention and Research Unit"
         },
         {
-        	"@type": "person",
+        	"@type": "Person",
             "name": "Amelia C. Crampin",
             "memberOf": "Malawi Epidemiology Intervention and Research Unit"
         }
     ],
     "sdPublisher": [ 
         {
-            "@type": "person",
+            "@type": "Person",
             "name": "Estelle McLean",
             "memberOf": "Malawi Epidemiology Intervention and Research Unit (MEIRU)"
         },
@@ -40,7 +40,7 @@
     "sdDatePublished": "2019-06-25",
     "audience": [
     	{
-        	"@type": "audience",
+        	"@type": "Audience",
             "audienceType": "Health and Demographic Surveillance Systems",
             "alternateName": "HDSS",
             "geographicArea": [
