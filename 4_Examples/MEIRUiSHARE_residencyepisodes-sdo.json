@@ -5,7 +5,7 @@
     "additionalType": "http://ddiCore.org/EventDataset/HDSS",
     "identifier": "http://www.xmind.net/m/mFJvWm",
     "name": "Karonga HDSS INDEPTH Core Dataset 2003-2017 (Release 2019)",
-    "author": [
+    "creator": [
         {
         	"@type": "Person",
             "name": "Albert Dube",
@@ -109,33 +109,41 @@
         ],
     "isPartOf": [
     	{
-        	"identifier": "https://ddiCore.org/longdataset",
+        "@type": "Dataset",
+        "identifier": "https://ddiCore.org/longdataset",
             "name": "DDI 4 Core InformationObject",
             "description": "An InformationObject includes four dataset types: WideDataSet, LongDataSet, KeyValueStore and DimensionalDataSet",
             "isPartOf": [
                 {
-                "identifier": "https://ddiCore.org/informationobject"
+                "@type": "Dataset",
+                "name": "DDI 4 Core InformationObject",
+                "description": "An InformationObject includes four dataset types: WideDataSet, LongDataSet, KeyValueStore and DimensionalDataSet",
+                "identifier": "https://ddiCore.org/informationobject"                                
                 }
             ]
         }
     ],
     "hasPart": [
     	{
+          "@type": "Dataset",
         	"identifier": "https://ddiCore.org/informationobject/eventdataset/identifiercomponent",
             "name": "DDI Core EventDataSet Identifier",
             "description": "An EventDataSet may have one or more identifiers. For example, the subject of an EventDataSet record might be a Person"
         },
         {
+          "@type": "Dataset",
         	"identifier": "https://ddiCore.org/informationobject/eventdataset/measurecomponent",
             "name": "DDI Core EventDataSet Measure",
             "description": "An EventDataSet row has just one measure -- an event"
         },
         {
+          "@type": "Dataset",
         	"identifier": "https://ddiCore.org/informationobject/eventdataset/dimensioncomponent",
             "name": "DDI Core EventDataSet Dimension",
             "description": "An EventDataSet has a Dimension component. In this context a DimensionComponent is used to stratify the MeasureComponent as occurs when we might stratify inmigration by sex,"
         },
         {
+          "@type": "Dataset",
         	"identifier": "https://ddiCore.org/informationobject/eventdataset/attributecomponent",
             "name": "DDI Core EventDataSet Attribute",
             "description": "An EventDataSet has at least one attribute component. It is the date that the event occurred. Other attributes that go to the protocol like a round or observation date may also be included."
