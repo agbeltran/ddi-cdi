@@ -1,0 +1,370 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdo": "http://schema.org/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "dcat:Dataset",
+  "@id": "http://rda/dtr2/recipes/structurerecipe/ddiCore.org#datasettype=eventdataset",
+  "additionalType": "http://ddiCore.org/EventDataset/HDSS",
+  "dct:identifier": "http://www.xmind.net/m/mFJvWm",
+  "dct:title": "Karonga HDSS INDEPTH Core Dataset 2003-2017 (Release 2019)",
+  "dct:creator": [
+      {
+        "@type": "foaf:Person",
+        "foaf:name": "Albert Dube",
+        "memberOf": "Malawi Epidemiology Intervention and Research Unit"
+      },
+      {
+        "@type": "foaf:Person",
+          "name": "Amelia C. Crampin",
+          "memberOf": "Malawi Epidemiology Intervention and Research Unit"
+      }
+  ],
+  "sdPublisher": [ 
+      {
+          "@type": "foaf:Person",
+          "name": "Estelle McLean",
+          "memberOf": "Malawi Epidemiology Intervention and Research Unit (MEIRU)"
+      },
+      {
+          "@type": "foaf:Organization",
+          "name": "Malawi Epidemiology Intervention and Research Unit (MEIRU)"
+      },
+      {
+          "@type": "foaf:Organization",
+          "name": "INDEPTH Network"
+      },
+      {
+          "@type": "foaf:Organization",
+          "name": "INDEPTH Network",
+          "memberOf": "iSHARE2 Technical Team"
+      }        
+  ],
+  "sdDatePublished": "2019-06-25",
+  "audience": [
+    {
+        "@type": "Audience",
+          "audienceType": "Health and Demographic Surveillance Systems",
+          "alternateName": "HDSS",
+          "geographicArea": [
+            {
+                "@type": "administrativeArea",
+                  "address": "Sub-Saharan Africa",
+                  "alternateName": "SSA"
+              }
+          ]
+      }
+  ],
+  "funder": [
+      {
+          "@type": "foaf:Organization",
+          "name": "Wellcome Trust"
+      }
+  ],
+  "datePublished": "2019-10-30",
+  "dateModified": "2019-11-10",
+  "version": ".51",
+  "abstract": "The Karonga Health and Demographic Surveillance System (Karonga HDSS) in northern Malawi currently has a population of more than 38 000 individuals under continuous demographic surveillance since completion of a baseline census (2002-2004). The surveillance system collects data on vital events and migration for individuals and for households. It also provides data on cause-specific mortality obtained by verbal autopsy for all age groups, and estimates rates of disease for specific presentations via linkage to clinical facility data. The Karonga HDSS provides a structure for surveys of socio-economic status, HIV-prevalence and incidence, sexual behavior, fertility intentions and a sampling frame for other studies, as well as evaluating the impact of interventions, such as antiretroviral therapy and vaccination programs. Uniquely, it relies on a network of village informants to report vital events and household moves, and furthermore is linked to an archive of biological samples and data from population surveys and other studies dating back three decades.",
+  "description": "This is one of many LongDataSet recipes. With event and episodic data a LongDataSet contains just one or two measures that are the same from one record to the next. In both cases the measure(s) are conditioned by time -- either an instant or an interval. So each row of a LongDataSet contains either an event or an episode (consisting of a start event and an end event) together with attributes for a start date and an end date that defines the instant/interval. Additionally, a LongDataSet has one or more unit identifiers. These identifiers together with the measure(s) are the key of a LongDataSet record. Additionally, a LongDataSet optionally includes one or more dimensions that repeat for the same unit from one record to the next -- e.g. sex and race of a person. These dimensions are convenience variables for sorting/filtering a LongDataSet. ",
+  "about": [
+    {
+        "disambiguatingDescription": "Alternatively, with some LongDataSets the measure component can be different from one record to the next. LongDataSets like this have in place of a measure component a measure descriptor component and a measure value. And the key of this type of LongDataSet is a combination of the identifier component(s) and the measure descriptor component",
+        "sameAs": "https://statswiki.unece.org/display/gsim/RAIRD+Information+Model+RIM+v1_0"
+      },
+    {
+        "@type": ["PropertyValue"],
+        "name": "Universe",
+        "value": "The DSS covers all the individuals of all ages who are members of households and are residents within the geographical boundaries of the study area. Visitors too were captured in the baseline survey.",
+          "additionalType": "https://ddiCore.org/universe"
+      },        
+    {
+        "@type": ["PropertyValue"],
+        "name": "Scope",
+        "value": ["All resident population of the HDSS", "Enumeration", "Birth", "Death", "Migration"],
+          "additionalType": "https://ddiCore.org/Scope"
+      },
+    {
+        "@type": ["PropertyValue"],
+        "name": "Topics",
+        "value": [
+           {
+               "@type":["PropertyValue"],
+               "name": "Demography [N01.224]",
+               "propertyID": "http://www.ncbi.nlm.nih.gov/mesh"
+            },
+           {
+               "@type":["PropertyValue"],
+               "name": "Emigration and Immigration [N01.224.625.350] ",
+               "propertyID": "http://www.ncbi.nlm.nih.gov/mesh"
+            },        	    
+           {
+               "@type":["PropertyValue"],
+               "name": "Mortality [N01.224.935.698] ",
+               "propertyID": "http://www.ncbi.nlm.nih.gov/mesh"
+            }, 
+           {
+               "@type":["PropertyValue"],
+               "name": "Birth Rate [N01.224.935.849.500] ",
+               "propertyID": "http://www.ncbi.nlm.nih.gov/mesh"
+            }           	  
+         ]
+       }
+      ],
+  "isPartOf": [
+    {
+      "@type": "Dataset",
+      "identifier": "https://ddiCore.org/longdataset",
+          "name": "DDI 4 Core InformationObject",
+          "description": "An InformationObject includes four dataset types: WideDataSet, LongDataSet, KeyValueStore and DimensionalDataSet",
+          "isPartOf": [
+              {
+              "@type": "Dataset",
+              "name": "DDI 4 Core InformationObject",
+              "description": "An InformationObject includes four dataset types: WideDataSet, LongDataSet, KeyValueStore and DimensionalDataSet",
+              "identifier": "https://ddiCore.org/informationobject"                                
+              }
+          ]
+      }
+  ],
+  "hasPart": [
+    {
+        "@type": "Dataset",
+        "identifier": "https://ddiCore.org/informationobject/eventdataset/identifiercomponent",
+          "name": "DDI Core EventDataSet Identifier",
+          "description": "An EventDataSet may have one or more identifiers. For example, the subject of an EventDataSet record might be a Person"
+      },
+      {
+        "@type": "Dataset",
+        "identifier": "https://ddiCore.org/informationobject/eventdataset/measurecomponent",
+          "name": "DDI Core EventDataSet Measure",
+          "description": "An EventDataSet row has just one measure -- an event"
+      },
+      {
+        "@type": "Dataset",
+        "identifier": "https://ddiCore.org/informationobject/eventdataset/dimensioncomponent",
+          "name": "DDI Core EventDataSet Dimension",
+          "description": "An EventDataSet has a Dimension component. In this context a DimensionComponent is used to stratify the MeasureComponent as occurs when we might stratify inmigration by sex,"
+      },
+      {
+        "@type": "Dataset",
+        "identifier": "https://ddiCore.org/informationobject/eventdataset/attributecomponent",
+          "name": "DDI Core EventDataSet Attribute",
+          "description": "An EventDataSet has at least one attribute component. It is the date that the event occurred. Other attributes that go to the protocol like a round or observation date may also be included."
+      }
+  ],
+  "keywords": [
+      "Demography", "Census", 
+      "Vital statistics", "Mortality", "Population dynamics",
+      "Life expectancy", "Malawi", "Sub-Saharan Africa",
+      "event data",
+      "episodic data"
+  ],
+  "spatialCoverage": [
+    {
+    "@type": "Place",
+      "description": "The Karonga HDSS surrounds the port village of Chilumba, on Lake Malawi, in the southern part of Karonga District . The surveillance area is located between latitudes 10.388 and 10.508S and longitudes 34.088 and 34.278E, covering an area of approximately 135 km2. The lake shore and the Nyika National Park form the boundaries to the east and west, respectively, whereas the boundaries to the north and south are delineated by village boundaries."
+     }
+  ],
+  "temporalCoverage": [
+      "2003/2017."
+  ],
+  "schemaVersion": "https://schema.org/version/3.3",
+  "license": {
+      "@type": "CreativeWork",
+      "text": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0"
+  },
+  "includedInDataCatalog": {
+      "@type": "DataCatalog",
+      "name": "INDEPTH Data Repository",
+      "url": "http://www.indepth-ishare.org/index.php/catalog/173"
+  },
+  "provider": {
+      "@type": "Organization",
+      "name": "INDEPTH Network"
+  },
+  "producer": {
+      "@type": "Organization",
+      "name": "Malawi Epidemiology Intervention and Research Unit (MEIRU)"
+  },
+  "measurementTechnique": "http://www.xmind.net/m/Y2WyeH",
+  "variableMeasured": [
+{
+    "@type": ["propertyValue"],
+    "name": "recNr",
+    "description": "A sequential number uniquely identifying each record in the data file",
+    "unitText": "continuous",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/identifierComponent?oboe.entity=schema.org:Action#oboe.entityCharacteristic=dc:identifier",
+    "measurementTechnique": "The recNr is programmatically generated each time a file is created/updated."
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "individualID",
+    "description": "A number uniquely identifying all the records belonging to a specific individual in the data file. This number is not the same as the identifier used by the contributing centre to identify the individual.",
+    "unitText": "continuous",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/identifierComponent?oboe.entity=foaf:person#oboe.entityCharacteristic=dc:identifier",
+    "measurementTechnique": "The individualID is programmatically generated (encrypted) in such a way that it supports record linkages within a round but not between rounds."
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "motherID",
+    "unitText": "continuous",
+    "description": "The IndividualId of the mother. Only provided for BTH event",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/identifierComponent?oboe.entity=foaf:person#oboe.entityCharacteristic=dc:identifier" 
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "deliveryID",
+    "unitText": "continuous",
+    "description": "The RecNr of the delivery event associated with this birth.",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/identifierComponent?oboe.entity=schema.org:Action#oboe.entityCharacteristic=dc:identifier"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "eventCode",
+    "description": "A code identifying the type of event that has occurred",      
+    "unitText": "discrete",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/measureComponent?oboe.entity=schema.org:Action#oboe.entityCharacteristic=classification",
+    "propertyID": "https://hdss.org/eventType",
+    "identifier": [
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/enumeration/ENU",
+      "description": "Starting event for all individuals present at the baseline census of the surveillance area. It corresponds to the date on which the individual was first observed to be present in the surveillance area during the baseline census."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/birth/BTH",
+      "description": "The birth of an individual to a resident female."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/inmigration/IMG",
+      "description": "The event of migrating into the surveillance area."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/outmigration/OMG",
+      "description": "The event of migrating out of the surveillance Destination (same as for Origin) area."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/exit/EXT",
+      "description": "The event of leaving a residential location within the surveillance area to take up residence in another residential location within the surveillance area."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/entry/ENT",
+      "description": "The event of taking up residence in a residential location within the surveillance area following a location exit event. Note that location exit and entry are actually two parts of the same action of changing residential location, and as such they happen on the same event date."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/death/DTH",
+      "description": "The death of the individual under surveillance. The date of death is the event date."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/observationEnd/OBE",
+      "description": "An event inserted when a dataset is right censored at an arbitrary date (the individual remains under surveillance beyond this date)."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/eventType/lastObservation/OBL",
+      "description": "An event indicating the last point in time that this individual was observed to be present in the surveillance population. Event date equals observation date in this instance."
+    }
+    ]
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "eventDate",
+    "description": "The date on which the event occurred",      
+    "unitText": "discrete",
+    "propertyID": "https://java.com/localdate",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent/timeComponent?oboe.entity=schema.org:Action#oboe.entityCharacteristic=dc:date"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "locationID",
+    "description": "Unique identifier associated with a residential unit within the site and represents the location where the individual was or became resident when the event occurred",      
+    "unitText": "continuous",
+    "propertyID": "https://java.com/int",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.entity=schema:org:Action#oboe.entityCharacteristic=dc:spatial"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "eventCount",
+    "description": "The total number of events associated with the individual in this dataset",      
+    "unitText": "continuous",
+    "minValue": "2",
+    "maxValue": "30",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.entity=schema:org:Action#oboe.entityCharacteristic=sum"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "sex",
+    "description": "Sex of individual",      
+    "unitText": "discrete",
+    "propertyID": "https://hdss.org/sex",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.entity=foaf:Person#oboe.entityCharacteristicExtension=sex",
+    "identifier": [
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/sex/male/1",
+      "description": "A biological male."
+    },
+    {
+      "@type": ["propertyValue"],
+      "url": "https://hdss.org/sex/female/2",
+      "description": "A biologicalfemale."
+    }
+    ]
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "dateOfBirth",
+    "description": "The date of birth of the individual",      
+    "unitText": "discrete",
+    "propertyID": "https://java.com/localdate",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.entity=foaf:Person#oboe.entityCharacteristicExtension=dob"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "countryID",
+    "description": "ISO 3166-1 numeric code of the country in which the surveillance site is situated",      
+    "unitText": "discrete",
+    "propertyID": "https://iso3166-1.org/numericCode",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.protocol=schema:ConsumeAction#schema:agent=dc:spatial"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "centreID",
+    "description": "An identifier issued by INDEPTH to each member centre of the format CCCSS, where CCC is a sequential centre identifier and SS is a sequential identifier of the site within the centre in the case of multiple site centres",      
+    "unitText": "discrete",
+    "propertyID": "https://indepth.org/centreID",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.protocol=schema:ConsumeAction#schema:agent=dc:identifier"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "observationDate",
+    "description": "Date on which the event was observed (recorded), also known as surveillance visit date",      
+    "unitText": "discrete",
+    "propertyID": "https://java.com/localdate",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.protocol=schema:ConsumeAction#schema:actionAccessibilityRequirement=dc:date"
+  },
+  {
+    "@type": ["propertyValue"],
+    "name": "observationRound",
+    "description": "Round in which the event was observed (recorded). Not always recorded. Sometimes derived",      
+    "unitText": "continuous",
+    "propertyID": "https://java.com/int",
+    "additionalType": "https://ddiCore.org/dataStructureComponent/attributeComponent?oboe.protocol=schema:ConsumeAction#schema:actionAccessibilityRequirement=dc:accrualPeriodicity"
+  }
+ ] 
+}

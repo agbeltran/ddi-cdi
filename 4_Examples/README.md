@@ -2,7 +2,7 @@
 
 - Original example
 
-The original example file is ```MEIRUiSHARE_residencyepisodes.json```
+The original example file is [```MEIRUiSHARE_residencyepisodes.json```](https://raw.githubusercontent.com/agbeltran/ddi-cdi/main/4_Examples/MEIRUiSHARE_residencyepisodes.json?token=AAKZ6SN63WWMLG7322C5EXLAIAJ4M)
 
 [Rich results test](https://search.google.com/test/rich-results?utm_campaign=sdtt&utm_medium=code&id=yvSOA0jtTop3eCaNalJqyQ)
 
