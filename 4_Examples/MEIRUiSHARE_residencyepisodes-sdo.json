@@ -45,9 +45,9 @@
             "alternateName": "HDSS",
             "geographicArea": [
             	{
-                	"@type": "administrativeArea",
-                    "address": "Sub-Saharan Africa",
-                    "alternateName": "SSA"
+                	"@type": "AdministrativeArea",
+                  "address": "Sub-Saharan Africa",
+                  "alternateName": "SSA"
                 }
             ]
         }

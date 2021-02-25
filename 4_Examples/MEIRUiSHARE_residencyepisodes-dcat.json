@@ -8,7 +8,8 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "sdo": "http://schema.org/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "org": " http://www.w3.org/ns/org#"
   },
   "@type": "dcat:Dataset",
   "@id": "http://rda/dtr2/recipes/structurerecipe/ddiCore.org#datasettype=eventdataset",
@@ -19,15 +20,15 @@
       {
         "@type": "foaf:Person",
         "foaf:name": "Albert Dube",
-        "memberOf": "Malawi Epidemiology Intervention and Research Unit"
+        "org:memberOf": "Malawi Epidemiology Intervention and Research Unit"
       },
       {
         "@type": "foaf:Person",
-          "name": "Amelia C. Crampin",
-          "memberOf": "Malawi Epidemiology Intervention and Research Unit"
+          "foaf:name": "Amelia C. Crampin",
+          "org:memberOf": "Malawi Epidemiology Intervention and Research Unit"
       }
   ],
-  "sdPublisher": [ 
+  "sdo:sdPublisher": [ 
       {
           "@type": "foaf:Person",
           "name": "Estelle McLean",
@@ -35,27 +36,27 @@
       },
       {
           "@type": "foaf:Organization",
-          "name": "Malawi Epidemiology Intervention and Research Unit (MEIRU)"
+          "foaf:name": "Malawi Epidemiology Intervention and Research Unit (MEIRU)"
       },
       {
           "@type": "foaf:Organization",
-          "name": "INDEPTH Network"
+          "foaf:name": "INDEPTH Network"
       },
       {
           "@type": "foaf:Organization",
-          "name": "INDEPTH Network",
-          "memberOf": "iSHARE2 Technical Team"
+          "foaf:name": "INDEPTH Network",
+          "org:memberOf": "iSHARE2 Technical Team"
       }        
   ],
-  "sdDatePublished": "2019-06-25",
-  "audience": [
+  "sdo:sdDatePublished": "2019-06-25",
+  "sdo:audience": [
     {
         "@type": "Audience",
-          "audienceType": "Health and Demographic Surveillance Systems",
-          "alternateName": "HDSS",
-          "geographicArea": [
+          "sdo:audienceType": "Health and Demographic Surveillance Systems",
+          "sdo:alternateName": "HDSS",
+          "sdo:geographicArea": [
             {
-                "@type": "administrativeArea",
+                "@type": "AdministrativeArea",
                   "address": "Sub-Saharan Africa",
                   "alternateName": "SSA"
               }
